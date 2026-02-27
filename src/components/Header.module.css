@@ -1,0 +1,12 @@
+.logo{
+  width: 200px;
+  height: 55px;
+}
+
+.menuLink{
+  font-size: 16px;
+}
+
+.menuLink:hover{
+  cursor: pointer;
+}
