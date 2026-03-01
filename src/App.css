@@ -1,9 +1,33 @@
-/* About */
-.hero-overlay {
-  background: linear-gradient(to bottom, #ffffff, #dd0f0f);
-  opacity: 0.7; 
+/* HERO */
+.hero-section {
+  height: 450px;
+  position: relative;
 }
 
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(221,15,15,0.7));
+}
+
+/* WHO SECTION */
+.who-section {
+  background-color: #f8f9fa;
+  padding: 100px 0;
+}
+
+/* SERVING */
+.serving-section {
+  background-color: #ffffff;
+}
+
+
+/* SECTORS */
+.sectors-section {
+  background-color: #f4f6f8;
+}
+
+/* RED BG SHAPE */
 .red-bg {
   position: absolute;
   width: 80%;
@@ -28,3 +52,232 @@
   z-index: 3;
 }
 
+
+
+.left-text { text-align: right; }
+.right-text { text-align: left; }
+
+.icon-group {
+  display: flex;
+  gap: 15px;
+  color: #dd0f0f;
+  font-size: 28px;
+  justify-content: center;
+}
+
+
+
+/* ⚫ Main Footer */
+.main-footer {
+  background: #05070b;
+  padding-top: 140px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+/* 🔴 Contact Bar Wrapper */
+.footer-contact-wrapper {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+}
+
+/* 🔴 Contact Bar */
+.footer-contact-bar {
+  background: linear-gradient(
+    to bottom,
+    #ff3b3f 0%,
+    #ff3b3f 50%,
+    #e11b22 50%,
+    #e11b22 100%
+  );
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Icon Circle */
+.footer-icon-circle {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  color: #e11b22;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Email Text */
+.footer-email-label {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.footer-email-text {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Button */
+.footer-contact-btn {
+  background: #f3f3f3;
+  color: #e11b22;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.footer-contact-btn:hover {
+  background: #ffffff;
+}
+
+/* Footer Content */
+.footer-heading {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.footer-text {
+  color: #a0a3a8;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.footer-list li {
+  color: #a0a3a8;
+  margin-bottom: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.3s;
+}
+
+.footer-list li:hover {
+  
+  color: #e11b22;
+  padding-left: 5px;
+}
+
+.footer-red-icon {
+  color: #e11b22;
+}
+
+.footer-divider {
+  border-color: #e11b22;
+  margin: 40px 0;
+}
+
+.footer-copy {
+  color: #a0a3a8;
+  font-size: 14px;
+}
+
+/* Social Icons */
+.social-box {
+  width: 40px;
+  height: 40px;
+  background: #1a1d23;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-box:hover {
+  background: #e11b22;
+}
+
+
+/* ✅ Mobile Fix */
+@media (max-width: 600px) {
+
+  .footer-contact-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+.footer-contact-email{
+    margin-top: -15px;
+    margin-bottom: 30px;
+    /* padding-top:-60px; */
+}
+  .footer-contact-btn {
+    margin-bottom: -15px;
+    width: 100%;
+  }
+
+}
+
+
+
+/* ===== SECTOR DESIGN ===== */
+
+.sector-row {
+  margin-bottom: 20px;
+}
+
+/* Desktop Layout */
+.sector-desktop {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2b37;
+}
+
+.left-text {
+  text-align: right;
+}
+
+.right-text {
+  text-align: left;
+}
+
+.icon-group {
+  display: flex;
+  gap: 15px;
+  color: #dd0f0f;
+  font-size: 28px;
+  justify-content: center;
+}
+
+/* Mobile Layout */
+.sector-mobile {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .sector-desktop {
+    display: none;
+  }
+
+  .sector-mobile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 16px;   /* mobile text smaller */
+    font-weight: 600;
+    color: #1f2b37;
+  }
+
+  .sector-icon {
+    color: #dd0f0f;
+    font-size: 20px;
+  }
+
+}
