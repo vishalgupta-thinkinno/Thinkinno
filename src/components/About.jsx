@@ -122,100 +122,101 @@ function About() {
       </section>
 
 
-      {/* sector section */}
-      <section className="sectors-section py-5">
-        <div className="container">
+   <section className="sectors-section py-5 mb-5">
+  <div className="container">
 
-          <h2 className="fw-bold text-center mb-4">
-            {sectors.title1}
-          </h2>
+    <h2 className="fs-2 text-center mb-4">
+      {sectors.title1}
+    </h2>
 
-          <div className="row">
+    <div className="row">
 
-            {/* LEFT COLUMN */}
-            <div className="col-12 col-md-6 mb-4 mb-md-0">
+<div className="col-12 col-md-6 mb-4 mb-md-0">
 
-              <div className="d-flex align-items-center mb-4">
-                <FaDatabase className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title7}
-                </span>
-              </div>
+  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
 
-              <div className="d-flex align-items-center mb-4">
-                <FaMicrosoft className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title8}
-                </span>
-              </div>
+    <FaFunnelDollar className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
 
-              <div className="d-flex align-items-center mb-4">
-                <FaHardHat className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title9}
-                </span>
-              </div>
+    <span className="fw-semibold fs-5 order-2 order-md-1">
+      {sectors.title2}
+    </span>
 
-              <div className="d-flex align-items-center mb-4">
-                <FaHeartbeat className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title10}
-                </span>
-              </div>
+  </div>
 
-              <div className="d-flex align-items-center">
-                <FaStore className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title11}
-                </span>
-              </div>
+  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+    <FaUniversity className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+    <span className="fw-semibold fs-5 order-2 order-md-1">
+      {sectors.title3}
+    </span>
+  </div>
 
-            </div>
+  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+    <FaBuilding className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+    <span className="fw-semibold fs-5 order-2 order-md-1">
+      {sectors.title4}
+    </span>
+  </div>
+
+  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+    <FaUtensils className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+    <span className="fw-semibold fs-5 order-2 order-md-1">
+      {sectors.title5}
+    </span>
+  </div>
+
+  <div className="d-flex align-items-center justify-content-start justify-content-md-end">
+    <FaTruck className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+    <span className="fw-semibold fs-5 order-2 order-md-1">
+      {sectors.title6}
+    </span>
+  </div>
+
+</div>
 
 
-            {/* RIGHT COLUMN */}
-            <div className="col-12 col-md-6 text-md-end">
+      {/* RIGHT COLUMN */}
+      <div className="col-12 col-md-6">
 
-              <div className="d-flex align-items-center justify-content-md-end mb-4">
-                <FaFunnelDollar className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title2}
-                </span>
-              </div>
-
-              <div className="d-flex align-items-center justify-content-md-end mb-4">
-                <FaUniversity className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title3}
-                </span>
-              </div>
-
-              <div className="d-flex align-items-center justify-content-md-end mb-4">
-                <FaBuilding className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title4}
-                </span>
-              </div>
-
-              <div className="d-flex align-items-center justify-content-md-end mb-4">
-                <FaUtensils className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title5}
-                </span>
-              </div>
-
-              <div className="d-flex align-items-center justify-content-md-end">
-                <FaTruck className="text-danger me-3 fs-4" />
-                <span className="fw-semibold">
-                  {sectors.title6}
-                </span>
-              </div>
-
-            </div>
-
-          </div>
+        <div className="d-flex align-items-center mb-4">
+          <FaDatabase className="text-danger me-3 fs-4" />
+          <span className="fw-semibold fs-5">
+            {sectors.title7}
+          </span>
         </div>
-      </section>
+
+        <div className="d-flex align-items-center mb-4">
+          <FaMicrosoft className="text-danger me-3 fs-4" />
+          <span className="fw-semibold fs-5">
+            {sectors.title8}
+          </span>
+        </div>
+
+        <div className="d-flex align-items-center mb-4">
+          <FaHardHat className="text-danger me-3 fs-4" />
+          <span className="fw-semibold fs-5">
+            {sectors.title9}
+          </span>
+        </div>
+
+        <div className="d-flex align-items-center mb-4">
+          <FaHeartbeat className="text-danger me-3 fs-4" />
+          <span className="fw-semibold fs-5">
+            {sectors.title10}
+          </span>
+        </div>
+
+        <div className="d-flex align-items-center">
+          <FaStore className="text-danger me-3 fs-4" />
+          <span className="fw-semibold fs-5">
+            {sectors.title11}
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
     </div>
   );
 }

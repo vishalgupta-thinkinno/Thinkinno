@@ -67,6 +67,44 @@
 
 
 
+/* ===== SECTOR DESIGN ===== */
+
+.sector-row {
+  margin-bottom: 20px;
+}
+
+.sector-desktop {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2b37;
+}
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.icon-group {
+  display: flex;
+  gap: 15px;
+  color: #dd0f0f;
+  font-size: 28px;
+  justify-content: center;
+}
+
+.sector-mobile {
+  display: none;
+}
+
+
+
 /*  Main Footer */
 .main-footer {
   background: #05070b;
@@ -77,12 +115,11 @@
 
 .footer-contact-wrapper {
   position: absolute;
-  top: -60px;
+  top: -50px;
   left: 0;
   width: 100%;
 }
 
-/*  Contact Bar */
 .footer-contact-bar {
   background: linear-gradient(
     to bottom,
@@ -92,14 +129,14 @@
     #e11b22 100%
   );
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 16px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 .footer-icon-circle {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: #fff;
   color: #e11b22;
   border-radius: 50%;
@@ -204,7 +241,7 @@
   }
 .footer-contact-email{
     margin-top: -15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     /* padding-top:-60px; */
 }
   .footer-contact-btn {
@@ -216,45 +253,6 @@
 
 
 
-/* ===== SECTOR DESIGN ===== */
-
-.sector-row {
-  margin-bottom: 20px;
-}
-
-/* Desktop Layout */
-.sector-desktop {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 20px;
-  font-size: 22px;
-  font-weight: 600;
-  color: #1f2b37;
-}
-
-.left-text {
-  text-align: left;
-}
-
-.right-text {
-  text-align: right;
-}
-
-.icon-group {
-  display: flex;
-  gap: 15px;
-  color: #dd0f0f;
-  font-size: 28px;
-  justify-content: center;
-}
-
-/* Mobile Layout */
-.sector-mobile {
-  display: none;
-}
-
-/* Responsive */
 @media (max-width: 768px) {
 
   .sector-desktop {
@@ -265,7 +263,7 @@
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 16px;   /* mobile text smaller */
+    font-size: 16px;  
     font-weight: 600;
     color: #1f2b37;
   }
