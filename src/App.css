@@ -67,7 +67,7 @@
 
 
 
-/* ⚫ Main Footer */
+/*  Main Footer */
 .main-footer {
   background: #05070b;
   padding-top: 140px;
@@ -75,7 +75,6 @@
   position: relative;
 }
 
-/* 🔴 Contact Bar Wrapper */
 .footer-contact-wrapper {
   position: absolute;
   top: -60px;
@@ -83,7 +82,7 @@
   width: 100%;
 }
 
-/* 🔴 Contact Bar */
+/*  Contact Bar */
 .footer-contact-bar {
   background: linear-gradient(
     to bottom,
@@ -98,7 +97,6 @@
   box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
-/* Icon Circle */
 .footer-icon-circle {
   width: 60px;
   height: 60px;
@@ -111,7 +109,6 @@
   font-size: 22px;
 }
 
-/* Email Text */
 .footer-email-label {
   font-size: 14px;
   letter-spacing: 1px;
@@ -122,7 +119,6 @@
   font-weight: 700;
 }
 
-/* Button */
 .footer-contact-btn {
   background: #f3f3f3;
   color: #e11b22;
@@ -199,7 +195,6 @@
 }
 
 
-/* ✅ Mobile Fix */
 @media (max-width: 600px) {
 
   .footer-contact-bar {
@@ -239,11 +234,11 @@
 }
 
 .left-text {
-  text-align: right;
+  text-align: left;
 }
 
 .right-text {
-  text-align: left;
+  text-align: right;
 }
 
 .icon-group {
