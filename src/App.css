@@ -48,7 +48,7 @@
   position: absolute;
   width: 55%;
   bottom: -40px;
-  left: -40px;
+  left: -10px;
   z-index: 3;
 }
 
@@ -70,7 +70,7 @@
 
 /* RED SHADOW EFFECT */
 .red-shadow {
-  box-shadow: 0 8px 25px rgba(225, 27, 34, 0.25);
+  box-shadow: 0 8px 25px rgba(114, 105, 105, 0.25);
   transition: all 0.3s ease;
   border-radius: 12px;
 }
@@ -281,22 +281,27 @@
 
 @media (max-width: 768px) {
 
-  .sector-desktop {
-    display: none;
+  .who-section {
+    padding: 60px 0;
   }
 
-  .sector-mobile {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    font-size: 16px;  
-    font-weight: 600;
-    color: #1f2b37;
+  .red-bg {
+    width: 85%;
+    height: 100%;
+    bottom: -15px;   
+    right: 10px;
   }
 
-  .sector-icon {
-    color: #dd0f0f;
-    font-size: 20px;
+  .main-img {
+    width: 100%;
+    align-self: center;
   }
+
+  .small-img {
+    width: 60%;    
+    bottom: -25px;  
+    left: 1px;    
+  }
+  
 
 }

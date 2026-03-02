@@ -109,87 +109,84 @@ function About() {
 
           <div className="row align-items-center">
 
-            {/* LEFT TEXT COLUMN */}
+            {/* */}
             <div className="col-12 col-md-4 mb-4 mb-md-0 text-start">
               <h6 className="text-muted">
                 {core.title2}
               </h6>
-              <h2 className="fw-bold text-danger">
+              <h1 className=" text-danger">
                 {core.title3}
-              </h2>
+              </h1>
             </div>
 
-            {/* RIGHT CARDS COLUMN */}
-           <div className="col-12 col-md-8">
-  <div className="row">
+            <div className="col-12 col-md-8">
+            <div className="row g-4">
 
-    {/* LEFT CARDS COLUMN */}
-    <div className="col-12 col-md-6">
+                <div className="col-12 col-md-6">
 
-      <div className="card border-0 red-shadow p-4 mb-4 mt-md-n3">
-        <img
-          src={core.imageLink1}
-          alt=""
-          width="100"
-          className="mb-3 d-block mx-auto"
-        />
-        <p className="text-danger mb-0 fs-4">
-          {core.subheading2}
-        </p>
-      </div>
+                  <div className="card border-0 red-shadow p-4 mb-4 mt-md-n3">
+                    <img
+                      src={core.imageLink1}
+                      alt=""
+                      width="80"
+                      className="mb-3"
+                    />
+                    <p className="text-danger mb-0 fs-4">
+                      {core.subheading2}
+                    </p>
+                  </div>
 
-      <div className="card border-0 red-shadow p-4">
-        <img
-          src={core.imageLink3}
-          alt=""
-          width="100"
-          className="mb-3 d-block mx-auto"
-        />
-        <p className="text-danger mb-0 fs-4">
-          {core.subheading4}
-        </p>
-      </div>
+                  <div className="card border-0 red-shadow p-4">
+                    <img
+                      src={core.imageLink3}
+                      alt=""
+                      width="80"
+                      className="mb-3"
+                    />
+                    <p className="text-danger mb-0 fs-4">
+                      {core.subheading4}
+                    </p>
+                  </div>
 
-    </div>
+                </div>
 
 
-    {/* RIGHT CARDS COLUMN */}
-    <div className="col-12 col-md-6 mt-md-5">
+                <div className="col-12 col-md-6 mt-md-5">
 
-      <div className="card border-0 red-shadow p-4 mb-4">
-        <img
-          src={core.imageLink2}
-          alt=""
-          width="100"
-          className="mb-3 d-block mx-auto"
-        />
-        <p className="text-danger mb-0 fs-4">
-          {core.subheading3}
-        </p>
-      </div>
+                  <div className="card border-0 red-shadow p-4 mb-4">
+                    <img
+                      src={core.imageLink2}
+                      alt=""
+                      width="80"
+                      className="mb-3"
+                    />
+                    <p className="text-danger mb-0 fs-4">
+                      {core.subheading3}
+                    </p>
+                  </div>
 
-      <div className="card border-0 red-shadow p-4">
-        <img
-          src={core.imageLink4}
-          alt=""
-          width="100"
-          className="mb-3 d-block mx-auto"
-        />
-        <p className="text-danger mb-0 fs-4">
-          {core.subheading5}
-        </p>
-      </div>
+                  <div className="card border-0 red-shadow p-4">
+                    <img
+                      src={core.imageLink4}
+                      alt=""
+                      width="80"
+                      className="mb-3"
+                    />
+                    <p className="text-danger mb-0 fs-4">
+                      {core.subheading5}
+                    </p>
+                  </div>
 
-    </div>
+                </div>
 
-  </div>
-</div>
+              </div>
+            </div>
 
           </div>
         </div>
       </section>
 
-
+      {/* sectors served section */}
       <section className="sectors-section py-5 mb-5">
         <div className="container">
 
