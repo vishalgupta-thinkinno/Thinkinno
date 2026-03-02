@@ -93,130 +93,198 @@ function About() {
 
       {/* core section */}
       <section className="core-section py-5">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-3">{core.title1}</h2>
-          <p className="text-muted mb-5">{core.subheading1}</p>
+        <div className="container">
+
+          {/* Section Heading */}
+          <div className="text-center mb-5">
+            <h2 className="fw-bold mb-3">
+              {core.title1}
+            </h2>
+
+            <p className="text-muted mb-0">
+              {core.subheading1}
+            </p>
+          </div>
+
 
           <div className="row align-items-center">
-            <div className="col-md-4 text-md-start text-center mb-4 mb-md-0">
-              <h6 className="text-muted">{core.title2}</h6>
-              <h2 className="fw-bold text-danger">{core.title3}</h2>
+
+            {/* LEFT TEXT COLUMN */}
+            <div className="col-12 col-md-4 mb-4 mb-md-0 text-start">
+              <h6 className="text-muted">
+                {core.title2}
+              </h6>
+              <h2 className="fw-bold text-danger">
+                {core.title3}
+              </h2>
             </div>
 
-            <div className="col-md-8">
-              <div className="row g-4">
-                {[core.imageLink1, core.imageLink2, core.imageLink3, core.imageLink4].map((img, index) => (
-                  <div className="col-md-6" key={index}>
-                    <div className="card border-0 shadow-sm p-4 h-100">
-                      <img src={img} alt="" width="60" className="mb-3 mx-auto" />
-                      <p className="text-danger fw-medium mb-0">
-                        {core[`subheading${index + 2}`]}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* RIGHT CARDS COLUMN */}
+           <div className="col-12 col-md-8">
+  <div className="row">
+
+    {/* LEFT CARDS COLUMN */}
+    <div className="col-12 col-md-6">
+
+      <div className="card border-0 red-shadow p-4 mb-4 mt-md-n3">
+        <img
+          src={core.imageLink1}
+          alt=""
+          width="100"
+          className="mb-3 d-block mx-auto"
+        />
+        <p className="text-danger mb-0 fs-4">
+          {core.subheading2}
+        </p>
+      </div>
+
+      <div className="card border-0 red-shadow p-4">
+        <img
+          src={core.imageLink3}
+          alt=""
+          width="100"
+          className="mb-3 d-block mx-auto"
+        />
+        <p className="text-danger mb-0 fs-4">
+          {core.subheading4}
+        </p>
+      </div>
+
+    </div>
+
+
+    {/* RIGHT CARDS COLUMN */}
+    <div className="col-12 col-md-6 mt-md-5">
+
+      <div className="card border-0 red-shadow p-4 mb-4">
+        <img
+          src={core.imageLink2}
+          alt=""
+          width="100"
+          className="mb-3 d-block mx-auto"
+        />
+        <p className="text-danger mb-0 fs-4">
+          {core.subheading3}
+        </p>
+      </div>
+
+      <div className="card border-0 red-shadow p-4">
+        <img
+          src={core.imageLink4}
+          alt=""
+          width="100"
+          className="mb-3 d-block mx-auto"
+        />
+        <p className="text-danger mb-0 fs-4">
+          {core.subheading5}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
           </div>
         </div>
       </section>
 
 
-   <section className="sectors-section py-5 mb-5">
-  <div className="container">
+      <section className="sectors-section py-5 mb-5">
+        <div className="container">
 
-    <h2 className="fs-2 text-center mb-4">
-      {sectors.title1}
-    </h2>
+          <h2 className="fs-2 text-center mb-4">
+            {sectors.title1}
+          </h2>
 
-    <div className="row">
+          <div className="row">
 
-<div className="col-12 col-md-6 mb-4 mb-md-0">
+            <div className="col-12 col-md-6 mb-4 mb-md-0">
 
-  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+              <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
 
-    <FaFunnelDollar className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+                <FaFunnelDollar className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
 
-    <span className="fw-semibold fs-5 order-2 order-md-1">
-      {sectors.title2}
-    </span>
+                <span className="fw-semibold fs-5 order-2 order-md-1">
+                  {sectors.title2}
+                </span>
 
-  </div>
+              </div>
 
-  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
-    <FaUniversity className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
-    <span className="fw-semibold fs-5 order-2 order-md-1">
-      {sectors.title3}
-    </span>
-  </div>
+              <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+                <FaUniversity className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+                <span className="fw-semibold fs-5 order-2 order-md-1">
+                  {sectors.title3}
+                </span>
+              </div>
 
-  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
-    <FaBuilding className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
-    <span className="fw-semibold fs-5 order-2 order-md-1">
-      {sectors.title4}
-    </span>
-  </div>
+              <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+                <FaBuilding className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+                <span className="fw-semibold fs-5 order-2 order-md-1">
+                  {sectors.title4}
+                </span>
+              </div>
 
-  <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
-    <FaUtensils className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
-    <span className="fw-semibold fs-5 order-2 order-md-1">
-      {sectors.title5}
-    </span>
-  </div>
+              <div className="d-flex align-items-center justify-content-start justify-content-md-end mb-4">
+                <FaUtensils className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+                <span className="fw-semibold fs-5 order-2 order-md-1">
+                  {sectors.title5}
+                </span>
+              </div>
 
-  <div className="d-flex align-items-center justify-content-start justify-content-md-end">
-    <FaTruck className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
-    <span className="fw-semibold fs-5 order-2 order-md-1">
-      {sectors.title6}
-    </span>
-  </div>
+              <div className="d-flex align-items-center justify-content-start justify-content-md-end">
+                <FaTruck className="text-danger me-3 me-md-0 ms-md-3 fs-4 order-1 order-md-2" />
+                <span className="fw-semibold fs-5 order-2 order-md-1">
+                  {sectors.title6}
+                </span>
+              </div>
 
-</div>
+            </div>
 
 
-      {/* RIGHT COLUMN */}
-      <div className="col-12 col-md-6">
+            {/* RIGHT COLUMN */}
+            <div className="col-12 col-md-6">
 
-        <div className="d-flex align-items-center mb-4">
-          <FaDatabase className="text-danger me-3 fs-4" />
-          <span className="fw-semibold fs-5">
-            {sectors.title7}
-          </span>
+              <div className="d-flex align-items-center mb-4">
+                <FaDatabase className="text-danger me-3 fs-4" />
+                <span className="fw-semibold fs-5">
+                  {sectors.title7}
+                </span>
+              </div>
+
+              <div className="d-flex align-items-center mb-4">
+                <FaMicrosoft className="text-danger me-3 fs-4" />
+                <span className="fw-semibold fs-5">
+                  {sectors.title8}
+                </span>
+              </div>
+
+              <div className="d-flex align-items-center mb-4">
+                <FaHardHat className="text-danger me-3 fs-4" />
+                <span className="fw-semibold fs-5">
+                  {sectors.title9}
+                </span>
+              </div>
+
+              <div className="d-flex align-items-center mb-4">
+                <FaHeartbeat className="text-danger me-3 fs-4" />
+                <span className="fw-semibold fs-5">
+                  {sectors.title10}
+                </span>
+              </div>
+
+              <div className="d-flex align-items-center">
+                <FaStore className="text-danger me-3 fs-4" />
+                <span className="fw-semibold fs-5">
+                  {sectors.title11}
+                </span>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-
-        <div className="d-flex align-items-center mb-4">
-          <FaMicrosoft className="text-danger me-3 fs-4" />
-          <span className="fw-semibold fs-5">
-            {sectors.title8}
-          </span>
-        </div>
-
-        <div className="d-flex align-items-center mb-4">
-          <FaHardHat className="text-danger me-3 fs-4" />
-          <span className="fw-semibold fs-5">
-            {sectors.title9}
-          </span>
-        </div>
-
-        <div className="d-flex align-items-center mb-4">
-          <FaHeartbeat className="text-danger me-3 fs-4" />
-          <span className="fw-semibold fs-5">
-            {sectors.title10}
-          </span>
-        </div>
-
-        <div className="d-flex align-items-center">
-          <FaStore className="text-danger me-3 fs-4" />
-          <span className="fw-semibold fs-5">
-            {sectors.title11}
-          </span>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
     </div>
   );
 }

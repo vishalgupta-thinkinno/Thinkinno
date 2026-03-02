@@ -65,6 +65,32 @@
   justify-content: center;
 }
 
+/* core value */
+
+
+/* RED SHADOW EFFECT */
+.red-shadow {
+  box-shadow: 0 8px 25px rgba(225, 27, 34, 0.25);
+  transition: all 0.3s ease;
+  border-radius: 12px;
+}
+
+.red-shadow:hover {
+  box-shadow: 0 12px 35px rgba(225, 27, 34, 0.4);
+  transform: translateY(-5px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===== SECTOR DESIGN ===== */
